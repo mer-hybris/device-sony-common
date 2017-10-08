@@ -72,6 +72,7 @@ service qcamerasvr /odm/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
     writepid /dev/cpuset/camera-daemon/tasks
+    setenv LD_LIBRARY_PATH /usr/libexec/droid-hybris/lib-dev-alog:/vendor/lib:/system/lib:/odm/lib
 
 # QCOM prop
 service per_mgr /odm/bin/pm-service
