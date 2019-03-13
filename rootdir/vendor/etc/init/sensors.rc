@@ -21,7 +21,6 @@ service sensors /odm/bin/sensors.qcom
     class late_start
     user system
     group system
-    disabled
 
 # Start the service for unecrypted devices
 on property:ro.crypto.state=unencrypted
